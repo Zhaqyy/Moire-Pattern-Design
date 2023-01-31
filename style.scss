@@ -39,7 +39,7 @@ table.horizontal-lines {
 .vertical{
     width: 150vw;
     height:150vh;
-    position: absolute;
+    position: absolute;   
     inset: 0;
    
     animation: vert 30s linear infinite both;
@@ -81,6 +81,6 @@ table.horizontal-lines {
       transform: translate(-10%) rotateY(10deg);
     }
     to {
-      transform: translate(-20%, 10%) rotateY(-10deg);
+      transform: translate(-20%, -20%) rotateY(-10deg);
     }
     }

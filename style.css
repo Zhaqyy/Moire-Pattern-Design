@@ -85,7 +85,7 @@ body {
     transform: translate(-10%) rotateY(10deg);
   }
   to {
-    transform: translate(-20%, 10%) rotateY(-10deg);
+    transform: translate(-20%, -20%) rotateY(-10deg);
   }
 }
 @keyframes vert {
@@ -93,6 +93,6 @@ body {
     transform: translate(-10%) rotateY(10deg);
   }
   to {
-    transform: translate(-20%, 10%) rotateY(-10deg);
+    transform: translate(-20%, -20%) rotateY(-10deg);
   }
 }/*# sourceMappingURL=style.css.map */
