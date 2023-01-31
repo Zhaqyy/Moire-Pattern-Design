@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+.horizontal{
+width: 150vw;
+height:150vh;
+animation: hori 30s linear infinite both;
+
+
+table.horizontal-lines {
+    width: 150vw;
+    height:150vh;
+    background-color: #ffffff00;
+    border-width: 1px;
+    border-spacing: 1px;
+    border-color: #000000;
+    border-style: solid;
+    color: #FFFFFF;
+  }
+  
+  table.horizontal-lines td, table.horizontal-lines th {
+    background-color: #ffffff00;
+    border-width: 1px;
+    border-color: #000000;
+    border-style: solid;
+    padding: 1px;
+  }
+  
+  table.horizontal-lines thead {
+    background-color: #ffffff00;
+  }
+}
+
+.vertical{
+    width: 150vw;
+    height:150vh;
+    position: absolute;
+    inset: 0;
+   
+    animation: vert 30s linear infinite both;
+
+    table.vertical-lines {
+        width: 150vw;
+    height:150vh;
+        background-color: #ffffff00;
+        border-width: 1px;
+        border-spacing: 1px;
+        border-color: #000000;
+        border-style: solid;
+        color: #ffffff00;
+      }
+      
+      table.vertical-lines td, table.vertical-lines th {
+        border-width: 1px;
+        border-color: #000000;
+        border-style: solid;
+        padding: 1px;
+      }
+      
+      table.vertical-lines thead {
+        background-color: #ffffff00;
+      }
+}
+
+  @keyframes hori {
+    from {
+      transform: translate(0%) rotateX(-10deg);
+    }
+    to {
+      transform: translate(-10%, -10%) rotateX(10deg);
+    }
+  }
+  
+  @keyframes vert {
+    from {
+      transform: translate(-10%) rotateY(10deg);
+    }
+    to {
+      transform: translate(-20%, 10%) rotateY(-10deg);
+    }
+    }

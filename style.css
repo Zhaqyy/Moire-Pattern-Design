@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+.horizontal {
+  width: 150vw;
+  height: 150vh;
+  -webkit-animation: hori 30s linear infinite both;
+          animation: hori 30s linear infinite both;
+}
+.horizontal table.horizontal-lines {
+  width: 150vw;
+  height: 150vh;
+  background-color: rgba(255, 255, 255, 0);
+  border-width: 1px;
+  border-spacing: 1px;
+  border-color: #000000;
+  border-style: solid;
+  color: #FFFFFF;
+}
+.horizontal table.horizontal-lines td, .horizontal table.horizontal-lines th {
+  background-color: rgba(255, 255, 255, 0);
+  border-width: 1px;
+  border-color: #000000;
+  border-style: solid;
+  padding: 1px;
+}
+.horizontal table.horizontal-lines thead {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.vertical {
+  width: 150vw;
+  height: 150vh;
+  position: absolute;
+  inset: 0;
+  -webkit-animation: vert 30s linear infinite both;
+          animation: vert 30s linear infinite both;
+}
+.vertical table.vertical-lines {
+  width: 150vw;
+  height: 150vh;
+  background-color: rgba(255, 255, 255, 0);
+  border-width: 1px;
+  border-spacing: 1px;
+  border-color: #000000;
+  border-style: solid;
+  color: rgba(255, 255, 255, 0);
+}
+.vertical table.vertical-lines td, .vertical table.vertical-lines th {
+  border-width: 1px;
+  border-color: #000000;
+  border-style: solid;
+  padding: 1px;
+}
+.vertical table.vertical-lines thead {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes hori {
+  from {
+    transform: translate(0%) rotateX(-10deg);
+  }
+  to {
+    transform: translate(-10%, -10%) rotateX(10deg);
+  }
+}
+
+@keyframes hori {
+  from {
+    transform: translate(0%) rotateX(-10deg);
+  }
+  to {
+    transform: translate(-10%, -10%) rotateX(10deg);
+  }
+}
+@-webkit-keyframes vert {
+  from {
+    transform: translate(-10%) rotateY(10deg);
+  }
+  to {
+    transform: translate(-20%, 10%) rotateY(-10deg);
+  }
+}
+@keyframes vert {
+  from {
+    transform: translate(-10%) rotateY(10deg);
+  }
+  to {
+    transform: translate(-20%, 10%) rotateY(-10deg);
+  }
+}/*# sourceMappingURL=style.css.map */
